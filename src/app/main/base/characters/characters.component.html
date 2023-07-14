@@ -1,0 +1,21 @@
+<app-character [page]="actualPage"></app-character>
+<div class="row center-elem">
+    <div
+      class="btn-group btn-group-sm btn-1"
+      role="group"
+      aria-label="Small button group"
+    >
+      <a type="button" class="btn btn-outline-primary" (click)="previousPage()">prev</a>
+      <button type="button" class="btn btn-outline-primary" disabled>{{actualPage}} of 42</button>
+      <a type="button" class="btn btn-outline-primary" (click)="nextPage()">next</a>
+    </div>
+    <div
+      class="btn-group btn-group-sm btn-1"
+      role="group"
+      aria-label="Small button group"
+    >
+      <a type="button" class="btn btn-outline-primary" (click)="goToFirstPage()">first page</a>
+      <a type="button" class="btn btn-outline-primary" (click)="goToMiddlePage()">page 21</a>
+      <a type="button" class="btn btn-outline-primary" (click)="goToLastPage()">last page</a>
+    </div>
+  </div>
